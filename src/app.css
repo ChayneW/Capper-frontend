@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+    @apply bg-black text-white; /* Apply Tailwind classes */
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the footer stays at the bottom */
+}
+
+footer {
+    margin-top: auto; /* Ensures the footer is pushed to the bottom */
+}

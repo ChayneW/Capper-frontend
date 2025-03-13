@@ -1,4 +1,7 @@
 <script>
+    import Navbar from "../components/Navbar.svelte";
+    import Footer from "../components/Footer.svelte";
+
     let message = "Loading...";
     const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
@@ -19,4 +22,11 @@
     fetchMessage();
 </script>
 
-<h1>{message}</h1>
+
+<Navbar />
+
+    <main class="container mx-auto p-4 flex-grow">
+        <h1 class="text-3xl font-bold text-center">Welcome to My Svelte App!</h1>
+        <p class="text-gray-700 text-center mt-2">This is a simple homepage.</p>
+    </main>
+<Footer />
